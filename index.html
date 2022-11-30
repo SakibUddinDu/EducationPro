@@ -20,19 +20,21 @@
           },
           extend: {
             colors: {
-              colorSecondary: "#289BDE",
-              headingPrimary: "#1D1D1D",
+              background: "hsla(0, 0%, 11%, 0.7)",
+              bgSecondary: "hsla(202, 73%, 51%, 1)",
+              bgSecondaryLight:"hsla(200, 70%, 49%, .85)",
+              headingPrimary: "hsla(0, 0%, 11%, 1)",
               headingSecondary: "#4A4A4A",
               paragraphColor: "#777777",
               footerParagraph: "#E8E8E8",
-              // brightRed: "hsl(12, 88%, 59%)",
-              // brightRedLight: "hsl(12, 88%, 69%)",
-              // brightRedSupLight: "hsl(12, 88%, 95%)",
-              // darkBlue: "hsl(228, 39%, 23%)",
-              // darkGrayishBlue: "hsl(227, 12%, 61%)",
-              // veryDarkBlue: "hsl(233, 12%, 13%)",
-              // veryPaleRed: "hsl(13, 100%, 96%)",
-              // veryLightGray: "hsl(0, 0%, 98%)",
+              brightRed: "hsl(12, 88%, 59%)",
+              brightRedLight: "hsl(12, 88%, 69%)",
+              brightRedSupLight: "hsl(12, 88%, 95%)",
+              darkBlue: "hsl(228, 39%, 23%)",
+              darkGrayishBlue: "hsl(227, 12%, 61%)",
+              veryDarkBlue: "hsl(233, 12%, 13%)",
+              veryPaleRed: "hsl(13, 100%, 96%)",
+              veryLightGray: "hsl(0, 0%, 98%)",
             },
           },
         },
@@ -42,10 +44,11 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="container relative bg-red-500 mx-auto p-6">
+    <div class="container mx-auto">
+    <nav  class="relative mx-auto p-6">
       <!-- flex container -->
 
-      <div class="flex items-center justify-between bg-red-700">
+      <div class="flex items-center justify-between">
         <!-- logo -->
         <div class="">
           <h1 class="text-4xl font-bold text-gray-700 mr-12 md:text-3xl">
@@ -65,7 +68,7 @@
         <a
           href="#"
           class="hidden inline-block text-sm px-4 py-2 border rounded text-teal-500 border-teal-200 hover:border-transparent hover:text-teal hover:bg-white md:block"
-          >Download</a
+          >Register</a
         >
 
         <!-- Hamburger Icon -->
@@ -92,6 +95,116 @@
         </div>
       </div>
     </nav>
+    <!-- header -->
+    <section class="bg-blend-overlay ">
+      <div
+        class="bg-[url('/images/cover/cover-1.png')] w-full h-screen bg-no-repeat"
+      >
+        <div class="text-description  text-center align-center md:w-1/2 md:mx-auto">
+          <h1 class="text-6xl font-semibold text-white leading-normal	">
+            Get Started Digital Learning
+          </h1>
+          <p class="text-white text-lg">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+          <div class="mt-12">
+            <a
+              href="#"
+              class="p-3 px-6 pt-2 mt-12 text-white bg-bgSecondary rounded baseline hover:bg-bgSecondaryLight"
+              >Get Started</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Courses -->
+  <section class="mt-24">
+    <!-- <div class="mx-auto text-10"></div> -->
+    <div class="heading w-1/2 mx-auto text-center">
+      <h1 class="headingPrimary text-center text-4xl leading-normal">Discover Our Popular Courses</h1>
+      <p class="text-gray-400 mt-3">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+    </div>
+    <div class="grid grid-col lg:grid-cols-2 gap-3 mt-12">
+    <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+      <div class="md:flex">
+        <div class="md:shrink-0">
+          <img class="h-48 w-full object-cover md:h-full md:w-48" src="/images/course/course-1.png" alt="Modern building architecture">
+        </div>
+        <div class="p-8">
+          <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Company retreats</div>
+          <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible accomodation for your team</a>
+          <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+      <div class="md:flex">
+        <div class="md:shrink-0">
+          <img class="h-48 w-full object-cover md:h-full md:w-48" src="/images/course/course-2.png" alt="Modern building architecture">
+        </div>
+        <div class="p-8">
+          <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Company retreats</div>
+          <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible accomodation for your team</a>
+          <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+      <div class="md:flex">
+        <div class="md:shrink-0">
+          <img class="h-48 w-full object-cover md:h-full md:w-48" src="/images/course/course-3.png" alt="Modern building architecture">
+        </div>
+        <div class="p-8">
+          <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Company retreats</div>
+          <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible accomodation for your team</a>
+          <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+      <div class="md:flex">
+        <div class="md:shrink-0">
+          <img class="h-48 w-full object-cover md:h-full md:w-48" src="/images/course/course-4.png" alt="Modern building architecture">
+        </div>
+        <div class="p-8">
+          <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Company retreats</div>
+          <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible accomodation for your team</a>
+          <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+      <div class="md:flex">
+        <div class="md:shrink-0">
+          <img class="h-48 w-full object-cover md:h-full md:w-48" src="/images/course/course-5.png" alt="Modern building architecture">
+        </div>
+        <div class="p-8">
+          <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Company retreats</div>
+          <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible accomodation for your team</a>
+          <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+      <div class="md:flex">
+        <div class="md:shrink-0">
+          <img class="h-48 w-full object-cover md:h-full md:w-48" src="/images/course/course-6.png" alt="Modern building architecture">
+        </div>
+        <div class="p-8">
+          <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Company retreats</div>
+          <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible accomodation for your team</a>
+          <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  
+
+</div>
     <!-- 
       color
       btn - #289BDE secondaruy heading - #1D1D1D tertiary heading -#4A4A4A  p -#777777 footer p -#E8E8E8 
@@ -112,24 +225,9 @@
       footer -40/16
      -->
 
-    <!-- 
-      <section>
-        <div
-          class="bg-[url('/images/cover/cover-1.png')] w-full h-screen bg-no-repeat"
-        >
-          <div class="text-description text-center align-center">
-            <h1 class="text-6xl font-semibold text-white leading-loose">
-              Get Started Digital Learning
-            </h1>
-            <p class="text-white text-lg">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout.
-            </p>
-            <button class="text-white">Get Started</button>
-          </div>
-        </div>
-      </section>
-    </div> -->
+    
+    
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
