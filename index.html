@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EDUPRO</title>
+    <!-- <link rel="stylesheet" href="./input.css" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        // content: ["./*.html"],
+        theme: {
+          screens: {
+            sm: "480px",
+            md: "768px",
+            lg: "976px",
+            xl: "1440px",
+          },
+          extend: {
+            colors: {
+              colorSecondary: "#289BDE",
+              headingPrimary: "#1D1D1D",
+              headingSecondary: "#4A4A4A",
+              paragraphColor: "#777777",
+              footerParagraph: "#E8E8E8",
+              brightRed: "hsl(12, 88%, 59%)",
+              brightRedLight: "hsl(12, 88%, 69%)",
+              brightRedSupLight: "hsl(12, 88%, 95%)",
+              darkBlue: "hsl(228, 39%, 23%)",
+              darkGrayishBlue: "hsl(227, 12%, 61%)",
+              veryDarkBlue: "hsl(233, 12%, 13%)",
+              veryPaleRed: "hsl(13, 100%, 96%)",
+              veryLightGray: "hsl(0, 0%, 98%)",
+            },
+          },
+        },
+        plugins: [],
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="container relative bg-red-500 mx-auto p-6">
+      <!-- flex container -->
+
+      <div class="flex items-center justify-between bg-red-700">
+        <!-- logo -->
+        <div class="">
+          <h1 class="text-4xl font-bold text-gray-700 mr-12 md:text-3xl">
+            EduPro
+          </h1>
+        </div>
+        <!-- menu -->
+        <div class="hidden space-x-8 md:flex">
+          <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Product</a>
+          <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+        </div>
+
+        <!-- button -->
+        <a
+          href="#"
+          class="hidden inline-block text-sm px-4 py-2 border rounded text-teal-500 border-teal-200 hover:border-transparent hover:text-teal hover:bg-white mt-4 md:block"
+          >Download</a
+        >
+
+        <!-- Hamburger Icon -->
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <svg
+            class="h-3 w-3"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+          <!-- <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span> -->
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <a href="#">Pricing</a>
+          <a href="#">Product</a>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Community</a>
+          <!-- button -->
+          <!-- <a
+            href="#"
+            class="hidden inline-block text-sm px-4 py-2 border rounded text-teal-500 border-teal-200 hover:border-transparent hover:text-teal hover:bg-white mt-4 md:block"
+            >Download</a
+          > -->
+        </div>
+      </div>
+    </nav>
+    <!-- 
+      color
+      btn - #289BDE secondaruy heading - #1D1D1D tertiary heading -#4A4A4A  p -#777777 footer p -#E8E8E8 
+    
+    colorSecondary: "#289BDE", headingPrimary: "#1D1D1D",
+    headingSecondary: "#4A4A4A", paragraphColor: "#777777", footerParagraph:
+    "#E8E8E8", -->
+
+    <!-- 
+      typography
+      40/20 -spacebtn- 12/32 45 anchor
+      65/18 
+      45/16/18
+      45/16 45/16
+      students - 20/16
+      feedback - 16/18/16
+      faq 20/16
+      footer -40/16
+     -->
+
+    <!-- <div class="container mx-auto px-12">
+      <section>
+        <nav class="flex items-center justify-between flex-wrap bg-teal p-6">
+          <div class="flex items-center flex-no-shrink text-white mr-6">
+            <h1 class="text-4xl font-bold text-gray-700 mr-12">Pro Edu</h1>
+          </div>
+          <div class="block lg:hidden">
+            <button
+              class="flex items-center px-3 py-2 border rounded text-gray-400 border-teal-light hover:text-white hover:border-white"
+            >
+              <svg
+                class="h-3 w-3"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
+            </button>
+          </div>
+          <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+            <div class="text-sm lg:flex-grow">
+              <a
+                href="#responsive-header"
+                class="block mt-4 lg:inline-block lg:mt-0 text-gray-400 hover:text-white mr-9"
+              >
+                Home
+              </a>
+              <a
+                href="#responsive-header"
+                class="block mt-4 lg:inline-block lg:mt-0 text-gray-400 hover:text-white mr-9"
+              >
+                Courses
+              </a>
+              <a
+                href="#responsive-header"
+                class="block mt-4 lg:inline-block lg:mt-0 text-gray-400 hover:text-white mr-9"
+              >
+                Deals
+              </a>
+              <a
+                href="#responsive-header"
+                class="block mt-4 lg:inline-block lg:mt-0 text-gray-400 hover:text-white mr-9"
+              >
+                Success
+              </a>
+              <a
+                href="#responsive-header"
+                class="block mt-4 lg:inline-block lg:mt-0 text-gray-400 hover:text-white mr-9"
+              >
+                About
+              </a>
+              <a
+                href="#responsive-header"
+                class="block mt-4 lg:inline-block lg:mt-0 text-gray-400 hover:text-white"
+              >
+                Register
+              </a>
+            </div>
+            <div>
+              <a
+                href="#"
+                class="inline-block text-sm px-4 py-2 border rounded text-teal-500 border-teal-200 hover:border-transparent hover:text-teal hover:bg-white mt-4 lg:mt-0"
+                >Download</a
+              >
+            </div>
+          </div>
+        </nav>
+      </section>
+      <section>
+        <div
+          class="bg-[url('/images/cover/cover-1.png')] w-full h-screen bg-no-repeat"
+        >
+          <div class="text-description text-center align-center">
+            <h1 class="text-6xl font-semibold text-white leading-loose">
+              Get Started Digital Learning
+            </h1>
+            <p class="text-white text-lg">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+            </p>
+            <button class="text-white">Get Started</button>
+          </div>
+        </div>
+      </section>
+    </div> -->
+    <script src="./script.js"></script>
+  </body>
+</html>
