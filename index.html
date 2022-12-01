@@ -38,14 +38,6 @@
               paragraphColor: "#777777",
               footerBg: "hsla(0, 0%, 9%, 1)",
               footerParagraph: "#E8E8E8",
-              brightRed: "hsl(12, 88%, 59%)",
-              brightRedLight: "hsl(12, 88%, 69%)",
-              brightRedSupLight: "hsl(12, 88%, 95%)",
-              darkBlue: "hsl(228, 39%, 23%)",
-              darkGrayishBlue: "hsl(227, 12%, 61%)",
-              veryDarkBlue: "hsl(233, 12%, 13%)",
-              veryPaleRed: "hsl(13, 100%, 96%)",
-              veryLightGray: "hsl(0, 0%, 98%)",
             },
           },
         },
@@ -54,8 +46,9 @@
     </script>
   </head>
   <body>
-    <!-- Navbar -->
+    
     <div class="container mx-auto">
+      
       <nav class="relative md:py-4 md:px-2">
         <!-- flex container -->
 
@@ -110,38 +103,72 @@
       <!-- header section -->
       <!-- component -->
 
-      <!-- This is an example component -->
       <div class="mx-auto">
         <div id="default-carousel" class="relative" data-carousel="static">
           <!-- Carousel wrapper -->
           <div class="overflow-hidden relative rounded-lg h-96">
             <!-- Item 1 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <span
-                class="absolute top-1/2 left-1/2 text-2xl font-semibold text-slate-900 -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800"
-                >First Slide</span
+            <div class="hidden  duration-700 ease-in-out brightness-50 bg-cover bg-[url('/images/cover/cover-1.png')] " data-carousel-item>
+              <div
+            class="pt-8 text-description text-center align-center w-9/12 mx-auto md:w-8/12 lg:w-1/2"
+          >
+          <h1 class=" text-4xl font-semibold text-white leading-normal md:text-6xl">
+            Get Started Digital Learning
+          </h1>
+            <p class="text-white text-lg  md:pt-4">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+            </p>
+            <div class="mt-12">
+              <a
+                href="#"
+                class="p-3 px-6 pt-2 mt-12 text-white bg-bgSecondary rounded baseline hover:bg-bgSecondaryLight"
+                >Get Started</a
               >
-              <img
-                src="./images/cover/cover-1.png"
-                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
-                alt="..."
-              />
+            </div>
+          </div>
             </div>
             <!-- Item 2 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="./images/cover/cover-2.jpg"
-                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
-                alt="..."
-              />
+            <div class="hidden  duration-700 ease-in-out brightness-50 bg-cover bg-[url('/images/cover/cover-2.jpg')] " data-carousel-item>
+              <div
+            class="pt-8 text-description text-center align-center w-9/12 mx-auto md:w-8/12 lg:w-1/2"
+          >
+          <h1 class=" text-4xl font-semibold text-white leading-normal md:text-6xl">
+            Get Started Digital Learning
+          </h1>
+            <p class="text-white text-lg  md:pt-4">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+            </p>
+            <div class="mt-12">
+              <a
+                href="#"
+                class="p-3 px-6 pt-2 mt-12 text-white bg-bgSecondary rounded baseline hover:bg-bgSecondaryLight"
+                >Get Started</a
+              >
+            </div>
+          </div>
             </div>
             <!-- Item 3 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="./images/cover/cover-3.jpg"
-                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
-                alt="..."
-              />
+            <div class="hidden  duration-700 ease-in-out brightness-50 bg-cover bg-[url('/images/cover/cover-3.jpg')] " data-carousel-item>
+              <div
+            class="pt-8 text-description text-center align-center w-9/12 mx-auto md:w-8/12 lg:w-1/2"
+          >
+          <h1 class=" text-4xl font-semibold text-white leading-normal md:text-6xl">
+            Get Started Digital Learning
+          </h1>
+            <p class="text-white text-lg  md:pt-4">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+            </p>
+            <div class="mt-12">
+              <a
+                href="#"
+                class="p-3 px-6 pt-2 mt-12 text-white bg-bgSecondary rounded baseline hover:bg-bgSecondaryLight"
+                >Get Started</a
+              >
+            </div>
+          </div>
             </div>
           </div>
           <!-- Slider indicators -->
@@ -453,11 +480,13 @@
         </div>
       </section>
 
+  
+<!-- Code block ends -->
       <!-- Ready to join Section -->
-      <section id="cta" class="bg-bgSecondary mt-24">
+      <section id="cta" class="bg-bgSecondary mt-24 relative">
         <!-- Flex Container -->
         <div
-          class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0"
+          class="container relative flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0"
         >
           <div class="w-1/2">
             <!-- Heading -->
@@ -472,16 +501,19 @@
             </p>
           </div>
           <!-- Button -->
-          <div>
+          <div class="" id="button">
+            <button class="p-3 px-6 pt-2 text-bgSecondary bg-white rounded shadow-2xl baseline hover:bg-gray-900" onclick="modalHandler(true)">Get Started</button>
+        </div>
+          <!-- <div>
             <a
               href="#"
               class="p-3 px-6 pt-2 text-bgSecondary bg-white rounded shadow-2xl baseline hover:bg-gray-900"
               >Get Started</a
             >
-          </div>
+          </div> -->
         </div>
       </section>
-
+        
       <!-- students section-->
       <section class="mt-24">
         <div class="heading w-full text-center md:w-7/12 md:text-left">
@@ -849,7 +881,7 @@
           </div>
         </div>
       </section>
-
+    </div>
       <!-- Footer Section -->
       <footer class="mt-24 bg-footerBg p-12 text-center">
         <h2 class="text-4xl font-bold text-white md:text-3xl">EduPro</h2>
@@ -885,7 +917,7 @@
       faq 20/16
       footer -40/16
      -->
-    </div>
+    
     <script src="./script.js"></script>
   </body>
 </html>
